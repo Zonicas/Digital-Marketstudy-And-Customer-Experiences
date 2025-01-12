@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Customer Experience</title>
+    <link rel="stylesheet" href="aiandcustomerexpstyles.css">
+
+</head>
+<body>
+    <header>
+        <h1>How AI is Transforming Customer Experience</h1>
+    </header>
+    <section>
+        <p>Here is the full detailed report on how AI is changing the customer experience landscape...</p>
+        <a href="index.html">← Back to Reports</a>
+        <a href="reports/digital-marketing-trends-2025.pdf" target="_blank">📄 View Full Report Online</a>
+    </section>
+    <section>
+        <h2>2024 Digital Marketing Trends</h2>
+        <p>Explore the latest trends shaping customer experience in 2024.</p>
+        
+        <!-- Download Link -->
+        <a href="reports/digital-marketing-trends-2024.pdf" download>📄 Download Full Report (PDF)</a>
+        
+        <!-- Embedded Chart -->
+        <h3>Customer Engagement Growth</h3>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <canvas id="customerTrendsChart" width="400" height="200"></canvas>    
+        <canvas id="engagementChart" width="400" height="200"></canvas>
+        <!-- Infographic -->
+        <h3>AI Integration in Marketing</h3>
+        <img src="images/ai-marketing-growth.png" alt="AI in Marketing" width="600px">
+    </section>
+    <script>
+        const ctx = document.getElementById('customerTrendsChart').getContext('2d');
+        const customerTrendsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'Customer Engagement Growth (%)',
+                    data: [25, 35, 50, 65, 80],
+                    backgroundColor: '#0073e6'
+                }]
+            },
+            options: {
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>    
+</body>
+</html>

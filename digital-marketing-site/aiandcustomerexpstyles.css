@@ -1,0 +1,13 @@
+.read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #c35fd5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #a300b5;
+}
